@@ -1,6 +1,6 @@
 import 'package:flame/components.dart';
-import 'package:myapp/unit.dart';
 import 'package:flame/game.dart';
+import 'package:mogamgm12/unit.dart';
 
 class Mage extends Unit {
   Mage({

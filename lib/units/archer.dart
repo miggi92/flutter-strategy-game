@@ -1,6 +1,6 @@
 import 'package:flame/components.dart';
-import 'package:myapp/unit.dart';
 import 'package:flame/game.dart';
+import '../unit.dart';
 
 class Archer extends Unit {
   Archer({

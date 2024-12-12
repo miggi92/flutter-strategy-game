@@ -1,9 +1,9 @@
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/units/archer.dart';
-import 'package:myapp/units/knight.dart';
-import 'package:myapp/units/mage.dart';
+import 'package:mogamgm12/units/archer.dart';
+import 'package:mogamgm12/units/knight.dart';
+import 'package:mogamgm12/units/mage.dart';
 
 class GameBoard extends Component with HasGameRef<MyGame> {
   @override
