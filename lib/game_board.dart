@@ -1,6 +1,7 @@
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/units/archer.dart';
 import 'package:myapp/units/knight.dart';
 import 'package:myapp/units/mage.dart';
 
@@ -9,6 +10,7 @@ class GameBoard extends Component with HasGameRef<MyGame> {
   Future<void> onLoad() async {
     add(Knight(position: Vector2(50, 50), gameRef: gameRef));
     add(Mage(position: Vector2(150, 50), gameRef: gameRef));
+    add(Archer(position: Vector2(250, 50), gameRef: gameRef));
   }
 
   @override
