@@ -1,4 +1,4 @@
-package dev.mgm12.mobile-game
+package dev.mgm12.mobilegame
 
 import io.flutter.embedding.android.FlutterActivity
 
