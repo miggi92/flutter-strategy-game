@@ -1,8 +1,16 @@
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/units/knight.dart';
+import 'package:myapp/units/mage.dart';
 
 class GameBoard extends Component with HasGameRef<MyGame> {
+  @override
+  Future<void> onLoad() async {
+    add(Knight(position: Vector2(50, 50), gameRef: gameRef));
+    add(Mage(position: Vector2(150, 50), gameRef: gameRef));
+  }
+
   @override
   void render(Canvas canvas) {
     final fieldSize = Vector2(50, 50); // Größe eines Feldes
@@ -41,6 +49,12 @@ class GameBoard extends Component with HasGameRef<MyGame> {
 class MyGame extends FlameGame {
   @override
   Future<void> onLoad() async {
+    await images.loadAll([
+      'game/units/knight.jpg',
+      'game/units/mage.jpg',
+      'game/units/archer.jpg',
+    ]);
+
     add(GameBoard());
   }
 }
