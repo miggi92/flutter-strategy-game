@@ -1,10 +1,1 @@
-{
-    "hosting": {
-      "public": "build/web",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    }
-  }
+{"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"]},"flutter":{"platforms":{"android":{"default":{"projectId":"mobile-game-mgm12","appId":"1:835533264956:android:54b10b6e34821ea2ac4b39","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"mobile-game-mgm12","configurations":{"android":"1:835533264956:android:54b10b6e34821ea2ac4b39","web":"1:835533264956:web:ea031218641daab1ac4b39"}}}}}}
