@@ -13,8 +13,8 @@ class Unit extends SpriteComponent {
     required this.attack,
     required this.defense,
     required this.movementRange,
-    required Sprite? sprite,
-    required Vector2? size,
-    required Vector2? position,
-  }) : super(sprite: sprite, size: size, position: position);
+    required super.sprite,
+    required super.size,
+    required super.position,
+  });
 }

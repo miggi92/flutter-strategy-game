@@ -5,7 +5,7 @@ import '../unit.dart';
 
 class Knight extends Unit {
   Knight({
-    required Vector2? position,
+    required super.position,
     required Game gameRef,
   }) : super(
           name: 'Knight',
@@ -16,6 +16,5 @@ class Knight extends Unit {
           sprite: Sprite(gameRef.images
               .fromCache('game/units/knight.jpg')), // Load the knight sprite
           size: Vector2(50, 50),
-          position: position,
         );
 }

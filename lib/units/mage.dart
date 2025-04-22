@@ -4,7 +4,7 @@ import 'package:mogamgm12/unit.dart';
 
 class Mage extends Unit {
   Mage({
-    required Vector2? position,
+    required super.position,
     required Game gameRef,
   }) : super(
           name: 'Mage',
@@ -14,6 +14,5 @@ class Mage extends Unit {
           movementRange: 3,
           sprite: Sprite(gameRef.images.fromCache('game/units/mage.jpg')),
           size: Vector2(50, 50),
-          position: position,
         );
 }

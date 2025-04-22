@@ -16,8 +16,8 @@ class GameBoard extends Component with HasGameRef<MyGame> {
   @override
   void render(Canvas canvas) {
     final fieldSize = Vector2(50, 50); // Größe eines Feldes
-    final fieldColor = Colors.green; // Farbe des Feldes
-    final borderColor = Colors.black; // Farbe des Rands
+    const fieldColor = Colors.green; // Farbe des Feldes
+    const borderColor = Colors.black; // Farbe des Rands
 
     for (var x = 0; x < 10; x++) {
       // 10 Felder in der Breite
